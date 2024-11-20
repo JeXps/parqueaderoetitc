@@ -1,7 +1,7 @@
 <?php
-$host = "localhost";  // Cambia esto si usas un host diferente
-$usuario = "root";    // Tu usuario de MySQL
-$password = "";       // Tu contraseña de MySQL
+$host = "basededatosparqueadero.mysql.database.azure.com";  // Cambia esto si usas un host diferente
+$usuario = "JeXps";    // Tu usuario de MySQL
+$password = "admin1234*";       // Tu contraseña de MySQL
 $base_de_datos = "parqueadero";  // Nombre de la base de datos
 
 // Crear conexión

@@ -109,7 +109,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="error-message"><?= $error ?></div>
         <?php endif; ?>
 
-        <a href="automatizacion.html" class="button back-button">Volver al Inicio</a>
+        <a href="index.html" class="button back-button">Volver al Inicio</a>
     </div>
 
 </body>
