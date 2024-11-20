@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Temporal - Automatización de Parqueadero</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Roboto', sans-serif; /* Usar fuente Roboto */
+            margin: 0;
+            padding: 0;
+            background-image: url('fondo.jpg'); /* Imagen de fondo */
+            background-size: cover; /* Cubrir toda la sección */
+            background-position: center; /* Centrar la imagen */
+            height: 100vh; /* Altura total */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Contenedor del formulario */
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco translúcido */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2e7d32; /* Verde oscuro */
+            margin-bottom: 20px; /* Espaciado debajo del título */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #2e7d32; /* Verde oscuro */
+            font-weight: bold; /* Negrita para etiquetas */
+        }
+
+        input {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #2e7d32; /* Borde verde oscuro */
+            border-radius: 5px;
+            font-size: 16px; /* Tamaño de fuente */
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #2e7d32; /* Color de fondo del botón */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s; /* Efecto de transición */
+            margin-bottom: 10px; /* Espaciado entre botones */
+        }
+
+        button:hover {
+            background-color: #1b5e20; /* Verde más oscuro al pasar el ratón */
+        }
+
+        .back-button {
+            background-color: #c62828; /* Rojo para el botón de volver */
+        }
+
+        .back-button:hover {
+            background-color: #b71c1c; /* Rojo más oscuro al pasar el ratón */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Registro Temporal</h1>
+        <form action="registro_temporal.php" method="POST"> <!-- Cambiar la acción aquí -->
+            <!-- Placa de la moto -->
+            <label for="placa">Placa de la moto:</label>
+            <input type="text" id="placa" name="placa" required>
+
+            <!-- Nombre completo -->
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <!-- Número de cédula -->
+            <label for="cedula">Número de cédula:</label>
+            <input type="text" id="cedula" name="cedula" required>
+
+            <!-- Correo electrónico -->
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <!-- Botón de envío -->
+            <button type="submit">Registrar</button>
+
+            <!-- Botón de volver -->
+            <a href="automatizacion.html"> 
+                <button type="button" class="back-button">Volver</button>
+            </a>
+        </form>
+    </div>
+
+</body>
+</html>

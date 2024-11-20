@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Automatización de Parqueadero</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('fondo.jpg'); /* Ruta de tu imagen de fondo */
+            background-size: cover; /* Cubrir toda la sección */
+            background-position: center; /* Centrar la imagen */
+            height: 100vh; /* Altura total */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: rgba(71, 67, 67, 0.918); /* Blanco translúcido */
+            color: #ffffff; /* Texto oscuro para contraste */
+            text-align: center;
+            padding: 20px 0;
+            position: relative; /* Posicionamiento relativo para el logotipo */
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        /* Contenedor Principal */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            flex-grow: 1; /* Permitir que el contenedor crezca */
+            text-align: center;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #ffffff; /* Color oscuro para el texto */
+            margin: 20px 0;
+        }
+
+        /* Cuadrícula de opciones */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        /* Estilos de los botones */
+        .option {
+            background-color: #1ebe19; /* Color de botón */
+            color: white;
+            text-decoration: none;
+            font-size: 1.5em;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .option:hover {
+            background-color: #188032; /* Color más oscuro al pasar el ratón */
+            transform: translateY(-15px); /* Efecto de elevación */
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: rgb(70, 68, 68); /* Blanco translúcido */
+            color: #ffffff; /* Texto oscuro para contraste */
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        /* Estilo de la imagen del logotipo */
+        .logo {
+            max-width: 250px; /* Ajusta según el tamaño deseado */
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Automatización de Parqueadero</h1>
+        <img src="logo.png" alt="Logo ETITC" class="logo"> <!-- Añadir el logo de la universidad -->
+        
+    </header>
+
+    <!-- Contenedor Principal -->
+    <div class="container">
+        <p>Seleccione una opción para continuar:</p>
+
+        <!-- Cuadrícula de opciones -->
+        <div class="grid">
+            <!-- Opción 1: Entrar como administrador -->
+            <a href="admin.php" class="option">Entrar como Administrador</a>
+
+            <!-- Opción 2: Registro temporal -->
+            <a href="registro_temporal.html" class="option">Registro Temporal</a>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Escuela Tecnológica Instituto Técnico Central. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
