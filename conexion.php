@@ -1,15 +1,15 @@
 <?php
-$host = "basededatosparqueadero.mysql.database.azure.com";  // Cambia esto si usas un host diferente
-$usuario = "JeXps";    // Tu usuario de MySQL
-$password = "admin1234*";       // Tu contraseña de MySQL
-$base_de_datos = "parqueadero";  // Nombre de la base de datos
+$host = "basededatosparqueadero.mysql.database.azure.com";
+$db = "parqueadero";
+$user = "JeXps@parqueadero";
+$pass = "admin1234*";
 
-// Crear conexión
-$conn = new mysqli($host, $usuario, $password, $base_de_datos);
+// Conectar a la base de datos
+$conn = mysqli_connect($host, $user, $pass, $db);
 
-// Comprobar conexión
-if ($conn->connect_error) {
-    die("Conexión fallida: " . $conn->connect_error);
+// Verificar la conexión
+if (!$conn) {
+    die("Error de conexión: " . mysqli_connect_error());
 }
-
+echo "Conexión exitosa a la base de datos";
 ?>
